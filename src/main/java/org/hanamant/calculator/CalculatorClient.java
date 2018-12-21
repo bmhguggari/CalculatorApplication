@@ -49,7 +49,7 @@ public class CalculatorClient {
 		int operand1 = -1, operand2 = -1, result = -1;
 		do {
 			logger.debug("\nPlease selection you option");
-			logger.debug("\n1. Addition \n2. Substraction \n3. Multiply \n4. Divide \n5. Modulus \n6. Exit");
+			logger.debug("\n1. Addition \n2. Subtraction \n3. Multiply \n4. Divide \n5. Modulus \n6. Exit");
 			option = scan.nextInt();
 			scan.nextLine();
 			switch(option) {
@@ -112,7 +112,7 @@ public class CalculatorClient {
 				logger.debug("Thanks for using Calculator Serivice Application.. Bye..!!\n");
 				break;
 			default:
-				
+				logger.debug("\nPlease select the appropriate option from the list\n");
 			}
 		} while(option != 6);
 		scan.close();
